@@ -1,0 +1,12 @@
+<div
+  class="chip"
+  [ngStyle]="{'background-color': chipColor}"
+  [class.selected]="controlService.selectedChip()?.chip_id === chip?.chip_id"
+  (click)="controlService.selectChip(chip)"
+>
+  <div class="wing1"></div>
+  <div class="wing2"></div>
+  <div class="wing3"></div>
+  <div class="square">{{chipNumber}}</div>
+  <div class="circle" [ngStyle]="{'background-image': cardAvatarUrl}"></div>
+</div>

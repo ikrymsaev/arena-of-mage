@@ -1,0 +1,44 @@
+<div class=border>
+  <div class=wrapper [ngStyle]="{'background-color': squadColor}">
+    <div class=image [ngStyle]="{'background-image': cardAvatarUrl}"></div>
+    <div class=description>
+      <div class="info">
+        <p class="name">{{cardInfo?.name}}</p>
+      </div>
+      <div class=description_skills>
+        <div class=skills>
+          <div class=melee>
+            <div class=skills_icon>
+              <div class=melee_icon></div>
+            </div>
+          </div>
+          <p>{{attack}}</p>
+        </div>
+        <div class=skills>
+          <div class=shooting>
+            <div class=skills_icon>
+              <div class=shooting_icon></div>
+            </div>
+          </div>
+          <p>{{shooting}}</p>
+        </div>
+        <div class=skills>
+          <div class=protection>
+            <div class=skills_icon>
+              <div class=protection_icon></div>
+            </div>
+          </div>
+          <p>{{protection}}</p>
+        </div>
+        <div class=skills>
+          <div class=survivability>
+            <div class=skills_icon>
+              <div class=survivability_icon></div>
+            </div>
+          </div>
+          <p>{{health}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

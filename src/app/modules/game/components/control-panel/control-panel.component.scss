@@ -1,0 +1,21 @@
+.display {
+  background-color: #000000cc;
+  padding: 16px;
+  margin: 16px 0;
+  border: 1px solid #ffffff;
+  color: aliceblue;
+  text-align: center;
+  min-height: 180px;
+}
+.player-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 8px 0;
+  gap: 8px;
+}
+.order-cells {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  gap: 8px;
+}

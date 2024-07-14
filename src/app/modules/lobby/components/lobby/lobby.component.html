@@ -1,0 +1,32 @@
+<div>
+  <h2>Create Game</h2>
+  <div>
+    <input
+      [(ngModel)]="title"
+      type="text"
+      name="title"
+    >
+    <hr>
+    <label for="width">ширина поля</label>
+    <br>
+    <input
+      [(ngModel)]="width"
+      step="2"
+      type="number"
+      name="width"
+      id="width"
+    >
+    <br>
+    <label for="height">высота поля</label>
+    <br>
+    <input
+      [(ngModel)]="height"
+      step="2"
+      type="number"
+      name="height"
+      id="height"
+    >
+    <br>
+    <button (click)="create()">Создать</button>
+  </div>
+</div>

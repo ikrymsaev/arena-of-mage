@@ -1,0 +1,151 @@
+
+.border {
+  background-color: black;
+  width: 118px;
+  height: 178px;
+  clip-path: polygon(7% 0, 93% 0, 100% 3%, 100% 97%, 93% 100%, 7% 100%, 0 97%, 0 3%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 114px;
+  height: 174px;
+  clip-path: polygon(7% 0, 93% 0, 100% 3%, 100% 97%, 93% 100%, 7% 100%, 0 97%, 0 3%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.image {
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex: 1 1 100%;
+  margin: 4px 4px 8px;
+  border-radius: 8px;
+}
+.description {
+  background: linear-gradient(
+      144deg,
+      rgba(208, 208, 193, 1) 0%,
+      rgba(255, 255, 255, 1) 48%,
+      rgba(208, 208, 193, 1) 100%
+  );
+  border-radius: 4px;
+  margin: 0 4px 4px 4px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info {
+  margin-bottom: 10px;
+}
+.name {
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 12px;
+}
+.description_skills {
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+}
+.skills {
+  line-height: 12px;
+  padding-bottom: 2px;
+  display: flex;
+  flex: 1 1 auto;
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 #262626;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Russo One', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills:nth-child(1) {
+  background-color: red;
+}
+.skills:nth-child(2) {
+  background-color: blue;
+}
+.skills:nth-child(3) {
+  background-color: goldenrod;
+}
+.skills:nth-child(4) {
+  background-color: green;
+}
+
+.melee {
+  margin-top: -7px;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shooting {
+  margin-top: -7px;
+  width: 18px;
+  height: 18px;
+  background-color: blue;
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.protection {
+  margin-top: -7px;
+  width: 18px;
+  height: 18px;
+  background-color: goldenrod;
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.survivability {
+  margin-top: -7px;
+  width: 18px;
+  height: 18px;
+  background-color: green;
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_icon {
+  width: 15px;
+  height: 15px;
+  clip-path: circle(50% at 50% 50%);
+  background-color: white;
+}
+.melee_icon {
+  width: 15px;
+  height: 15px;
+  background-image: url('../../../../../assets/icons/guns.svg');
+}
+.shooting_icon {
+  width: 15px;
+  height: 15px;
+  background-image: url('../../../../../assets/icons/target.svg');
+}
+.protection_icon {
+  width: 15px;
+  height: 15px;
+  background-image: url('../../../../../assets/icons/star.svg');
+}
+.survivability_icon {
+  width: 15px;
+  height: 15px;
+  background-image: url('../../../../../assets/icons/shield.svg');
+}

@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div>
+    <div class="start-points">
+      <div *ngFor="let point of fieldService.p2_startPoints; let i = index;"
+        class="start-point"
+      >
+        <app-start-cell> {{fieldService.p2_startPoints.length - i}}</app-start-cell>
+        <app-chip *ngIf="point.chip" [chip]="point.chip"></app-chip>
+      </div>
+    </div>
+    <div *ngFor="let row of fieldService.cells" class="row">
+      <app-field-cell
+        *ngFor="let cell of row"
+        [type]="cell.type"
+        [chip]="cell.chip"
+        (contextmenu)="controlService.rightClickCell({ x: cell.x, y: cell.y })"
+      ></app-field-cell>
+    </div>
+    <div class="start-points">
+      <div *ngFor="let point of fieldService.p1_startPoints; let i = index;"
+        class="start-point"
+      >
+        <app-start-cell> {{i + 1}}</app-start-cell>
+        <app-chip *ngIf="point.chip" [chip]="point.chip"></app-chip>
+      </div>
+    </div>
+  </div>
+</div>

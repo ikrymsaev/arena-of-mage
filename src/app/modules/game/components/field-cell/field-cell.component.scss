@@ -1,0 +1,42 @@
+.cell {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #6e6e6e;
+  background-size: cover;
+  background-position: center center;
+  user-select: none;
+}
+.cell_plain {
+  background-color: #f8eeae;
+  background-image: url('../../../../../assets/field/plain-min.jpg');
+}
+.cell_jungle {
+  background-color: #89c945;
+  background-image: url('../../../../../assets/field/jungle-min.jpg');
+  color: #ffffff;
+}
+.cell_lake {
+  background-color: #5bb0d5;
+  background-image: url('../../../../../assets/field/lake-min.jpg');
+}
+.cell_mountain {
+  background-color: #ef5a38;
+  background-image: url('../../../../../assets/field/mountain-min.jpg');
+  color: #ffffff;
+}
+.cell_swamp {
+  background-color: #9c8b46;
+  background-image: url('../../../../../assets/field/swamp-min.jpg');
+  color: #ffffff;
+}
+.active {
+  box-shadow: inset 0 0 15px 4px #ded2cf
+}
+.available {
+  opacity: 0.7;
+  border: 3px solid #5bb0d5;
+}

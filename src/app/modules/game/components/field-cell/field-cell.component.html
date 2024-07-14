@@ -1,0 +1,13 @@
+<div
+  prevent-context
+  [ngClass]="{
+    'cell_jungle': type === 'jungle',
+    'cell_lake': type === 'lake',
+    'cell_mountain': type === 'mountain',
+    'cell_plain': type === 'plain',
+    'cell_swamp': type === 'swamp'
+  }"
+  class="cell"
+>
+  <app-chip *ngIf="chip" [chip]="chip"></app-chip>
+</div>

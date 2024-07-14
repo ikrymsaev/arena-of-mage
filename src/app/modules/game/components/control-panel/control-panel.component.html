@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="player-cards">
+    <app-card
+      *ngFor="let item of enemyCards"
+      [cardInfo]="item.card"
+      [squadColor]="item.color"
+    ></app-card>
+  </div>
+  <div class="display">
+    Display
+  </div>
+  <div class="player-cards">
+    <app-card
+      *ngFor="let item of playerCards"
+      [cardInfo]="item.card"
+      [squadColor]="item.color"
+    ></app-card>
+  </div>
+</div>
